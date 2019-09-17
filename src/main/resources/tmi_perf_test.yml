@@ -10,3 +10,10 @@ scenarios:
     think-time: 0.75
     requests:
       - http://AWS16143:10081/monitor/healthcheck
+
+reporting:
+  - module: final-stats
+    summary: true
+    percentiles: true
+    test-duration: true
+    dum-csv: tmi_perf_test.csv
