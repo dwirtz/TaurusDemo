@@ -1,0 +1,10 @@
+## execution:
+- concurrency: 10
+  hold-for: 1m
+  ramp-up: 10s
+  scenario: Monitoring-HealthCheck
+
+scenarios:
+  Monitoring-HealthCheck:
+    requests:
+      - http://AWS16143:10081/monitor/healthcheck
