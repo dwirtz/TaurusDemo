@@ -1,10 +1,11 @@
 ## execution:
 - concurrency: 10
-  hold-for: 1m
-  ramp-up: 10s
+  ramp-up: 1m
+  hold-for: 1m30s
   scenario: Monitoring-HealthCheck
 
 scenarios:
   Monitoring-HealthCheck:
+    think-time: 0.75
     requests:
       - http://AWS16143:10081/monitor/healthcheck

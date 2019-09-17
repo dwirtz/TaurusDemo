@@ -4,7 +4,7 @@ node {
    }
    stage('Performance Tests') {
         BlazeMeterTest: {
-            dir ('/src/main/resources') {
+            dir ('\\src\\main\\resources') {
                 bat 'bzt tmi_perf_test.yml -report'
             }
         }
