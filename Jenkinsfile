@@ -14,7 +14,7 @@ node {
             dir ('target\\classes') {
                 bat 'bzt tmi_perf_test.yml -report'
             }
-            perfReport "**/target/*.csv"
+            perfReport '**/target/classes/*.csv'
         }
    }
    stage('Deploy') {
