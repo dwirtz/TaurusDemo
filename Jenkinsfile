@@ -1,6 +1,6 @@
 node {
    stage('Build') {
-      bat "./mvnw clean package"
+      bat "mvn clean package"
       dir('target\\classes'){
         stash name: "tmi_perf_test.yml", includes: "*"
       }
