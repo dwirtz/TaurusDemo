@@ -16,4 +16,4 @@ reporting:
     summary: true
     percentiles: true
     test-duration: true
-    dum-csv: tmi_perf_test.csv
+    dump-csv: tmi_perf_test.csv
