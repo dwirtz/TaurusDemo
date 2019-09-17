@@ -9,6 +9,6 @@ node {
             }
         }
    }
-   stage(‘Deploy’) {
+   stage('Deploy') {
    }
 }
