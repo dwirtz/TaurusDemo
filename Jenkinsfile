@@ -2,6 +2,7 @@ node {
    stage ('Checkout'){
         checkout scm
    }
+
    stage('Build') {
       bat "mvn clean package"
       dir('target\\classes'){
